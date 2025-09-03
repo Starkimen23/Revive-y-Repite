@@ -1,10 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/static/:path*", "destination": "https://script.google.com/static/:path*" },
+    { "source": "/static/:path*",    "destination": "https://script.google.com/static/:path*" },
+    { "source": "/wardeninit",       "destination": "https://script.google.com/wardeninit" },
+    { "source": "/wardenlog",        "destination": "https://script.google.com/wardenlog" },
 
-    { "source": "/",       "destination": "https://script.google.com/macros/s/AKfycbytR7BEpQr4dsyKhtkwC6ShDNPRB0lzNyfPx3uV2vAIN_wylr-cz1vwUpl2zwDcfLPRWw/exec" },
-    { "source": "/:path*", "destination": "https://script.google.com/macros/s/AKfycbytR7BEpQr4dsyKhtkwC6ShDNPRB0lzNyfPx3uV2vAIN_wylr-cz1vwUpl2zwDcfLPRWw/exec" }
+    { "source": "/",                 "destination": "https://script.google.com/macros/s/AKfycbytR7BEpQr4dsyKhtkwC6ShDNPRB0lzNyfPx3uV2vAIN_wylr-cz1vwUpl2zwDcfLPRWw/exec" },
+    { "source": "/:path*",           "destination": "https://script.google.com/macros/s/AKfycbytR7BEpQr4dsyKhtkwC6ShDNPRB0lzNyfPx3uV2vAIN_wylr-cz1vwUpl2zwDcfLPRWw/exec" }
   ],
   "headers": [
     {
